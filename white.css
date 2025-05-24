@@ -23,14 +23,25 @@
  font-style: normal;
 }
 body {
- font-family: "Hellix", "Arial", sans-serif;
- line-height: 200%;
+ font-family: "Hellix", sans-serif;
 }
 .header {
  display: flex;
  flex-wrap: nowrap;
  justify-content: space-between;
+ width: 60%;
  height: 58px;
+ margin: 53px auto 124px;
+ align-items: center;
+}
+.logo {
+ display: flex;
+ flex-wrap: nowrap;
+ width: 167px;
+ height: 58px;
+ justify-content: space-between;
+ align-items: center;
+ order: -1;
 }
 .logo img {
  width: 58px;
@@ -46,49 +57,75 @@ body {
 }
 .menu ul {
  list-style-type: none;
+ display: flex;
+ flex-wrap: nowrap;
+ gap: 40px;
 }
 .menu li {
+ display: inline;
+}
+.menu a {
  height: 17px;
  font-weight: 600;
  font-size: 14px;
  color: #202020;
+ text-decoration: none;
 }
-.menu button {
+.menu .contact {
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
  width: 100px;
  height: 24px;
- background-color: #5528FF;
- color: #FFFFFF;
+ background-color: #5528ff;
+ color: #ffffff;
  border: none;
  border-radius: 5px;
  font-weight: 600px;
  font-size: 14px;
 }
+.menu .contact:hover {
+ background-color: #9948ff;
+}
 .content h1 {
+ width: 60%;
+ margin: auto;
  font-weight: 700;
  font-size: 58px;
  text-align: center;
  color: #202020;
+ line-height: 100%;
 }
 .content p {
+ width: 60%;
+ margin: auto;
  font-weight: 400;
  font-size: 32px;
- color: #4F4F4F;
+ color: #4f4f4f;
+ line-height: 100%;
 }
-.content button {
+.content .contact {
+ display: flex;
+ justify-content: center;
+ align-items: center;
  width: 235px;
  height: 60px;
- background-color: #5528FF;
- color: #FFFFFF;
+ background-color: #5528ff;
+ color: #ffffff;
  border: none;
  border-radius: 10px;
+ text-decoration: none;
  font-weight: 400;
  font-size: 24px;
+}
+.content .contact:hover {
+ background-color: #9948ff;
 }
 h2 {
  height: 17px;
  font-weight: 300;
  font-size: 14px;
- color: #C2C2C2;
+ color: #c2c2c2;
 }
 .services {
  display: grid;
@@ -107,7 +144,8 @@ h2 {
 .service p {
  font-weight: 400;
  font-size: 14px;
- color: #B2B2B2;
+ color: #b2b2b2;
+ line-height: 100%;
 }
 .clients {
  display: grid;
@@ -132,14 +170,14 @@ h2 {
  height: 17px;
  font-weight: 400;
  font-size: 14px;
- color: #B2B2B2;
+ color: #b2b2b2;
 }
 .footer {
  display: flex;
  flex-wrap: nowrap;
  justify-content: space-between;
  height: 100px;
- background-color: #F7F7F7;
+ background-color: #f7f7f7;
 }
 .footer img {
  height: 24px;
