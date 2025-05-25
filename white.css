@@ -94,15 +94,15 @@ body {
  font-size: 58px;
  text-align: center;
  color: #202020;
- line-height: 100%;
+ line-height: 150%;
 }
 .content p {
  width: 60%;
- margin: auto;
+ margin: 24px auto 70px;
  font-weight: 400;
  font-size: 32px;
  color: #4f4f4f;
- line-height: 100%;
+ line-height: 150%;
 }
 .content .contact {
  display: flex;
@@ -110,6 +110,7 @@ body {
  align-items: center;
  width: 235px;
  height: 60px;
+ margin-left: 20%;
  background-color: #5528ff;
  color: #ffffff;
  border: none;
@@ -122,21 +123,39 @@ body {
  background-color: #9948ff;
 }
 h2 {
+ display: inline-block;
+ width: 150px;
  height: 17px;
  font-weight: 300;
  font-size: 14px;
+ text-align: center;
+ background-color: #ffffff;
+ color: #c2c2c2;
+ margin-top: 100px;
+ margin-bottom: -8px;
+ margin-left: calc(20% - 19px);
+}
+hr {
+ margin-top: -8px;
+ margin-bottom: 100px;
  color: #c2c2c2;
 }
 .services {
  display: grid;
  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+ width: 60%;
+ margin: auto;
+ gap: 80px 15%;
+}
+.service {
+ display: grid;
+ grid-template: 66px 1fr / 194px 1fr;
+ place-items: center center;
 }
 .service img {
- width: 80px;
- height: 60px;
+ grid-row: span 2;
 }
 .service h3 {
- height: 34px;
  font-weight: 400;
  font-size: 28px;
  color: #000000;
@@ -145,15 +164,20 @@ h2 {
  font-weight: 400;
  font-size: 14px;
  color: #b2b2b2;
- line-height: 100%;
+ line-height: 150%;
 }
 .clients {
  display: grid;
  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+ width: 60%;
+ margin: -40px auto 0;
+ gap: 60px 8%;
 }
 .our-team {
  display: grid;
  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+ width: 60%;
+ margin: auto;
 }
 .worker img {
  width: 100px;
