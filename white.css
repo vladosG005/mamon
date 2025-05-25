@@ -29,18 +29,18 @@ body {
  display: flex;
  flex-wrap: nowrap;
  justify-content: space-between;
+ align-items: center;
  width: 60%;
  height: 58px;
  margin: 53px auto 124px;
- align-items: center;
 }
 .logo {
  display: flex;
  flex-wrap: nowrap;
- width: 167px;
- height: 58px;
  justify-content: space-between;
  align-items: center;
+ width: 167px;
+ height: 58px;
  order: -1;
 }
 .logo img {
@@ -56,10 +56,10 @@ body {
  color: #202020;
 }
 .menu ul {
- list-style-type: none;
  display: flex;
  flex-wrap: nowrap;
  gap: 40px;
+ list-style-type: none;
 }
 .menu li {
  display: inline;
@@ -126,14 +126,14 @@ h2 {
  display: inline-block;
  width: 150px;
  height: 17px;
+ margin-top: 100px;
+ margin-bottom: -8px;
+ margin-left: calc(20% - 19px);
  font-weight: 300;
  font-size: 14px;
  text-align: center;
  background-color: #ffffff;
  color: #c2c2c2;
- margin-top: 100px;
- margin-bottom: -8px;
- margin-left: calc(20% - 19px);
 }
 hr {
  margin-top: -8px;
@@ -143,17 +143,19 @@ hr {
 .services {
  display: grid;
  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+ gap: 80px 15%;
  width: 60%;
  margin: auto;
- gap: 80px 15%;
 }
 .service {
  display: grid;
- grid-template: 66px 1fr / 194px 1fr;
+ grid-template: 66px 1fr / 168px 1fr;
  place-items: center center;
 }
 .service img {
  grid-row: span 2;
+ width: 80px;
+ height: 60px;
 }
 .service h3 {
  font-weight: 400;
@@ -169,17 +171,24 @@ hr {
 .clients {
  display: grid;
  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
- width: 60%;
- margin: -40px auto 0;
  gap: 60px 8%;
+ width: 50%;
+ margin: -40px auto 0;
 }
 .our-team {
  display: grid;
  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+ gap: 60px 8%;
  width: 60%;
  margin: auto;
 }
+.worker {
+ display: grid;
+ grid-template: 54px 1fr / 170px 1fr;
+ place-items: center center;
+}
 .worker img {
+ grid-row: span 2;
  width: 100px;
  height: 100px;
  border-radius: 100%;
@@ -203,6 +212,7 @@ hr {
  align-items: center;
  height: 100px;
  background-color: #f7f7f7;
+ margin-top: 100px;
 }
 .footer .social-networks {
  display: flex;
